@@ -1,1 +1,13 @@
-
+public class InternalUser : IAccounts
+{
+    public int CalculateSalary()
+    {
+        EmpDetail empDtl=new EmpDetail();
+        Accounts accnts=new Accounts();
+        int Attendence=empDtl.GetAttendence(UserID);
+        List<EmpDetail> empDetail=empDtl.GetEmpDetail(UserID);
+        //SalaryCalculation Login goes here//
+          //Some code//
+        //********************************//
+    }
+}
