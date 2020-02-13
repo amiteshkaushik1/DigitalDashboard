@@ -1,0 +1,7 @@
+//Entity Framework classes (Entity Classes)
+
+DbEntityContext db = new DbEntityContext();
+public List<EmpDetail> GetEmpDetail()
+{
+    return db.EmpDetail.ToList();
+}
