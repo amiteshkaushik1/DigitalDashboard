@@ -1,1 +1,18 @@
-
+public class HomeController : Controller
+    {
+        // GET: Student
+        public ActionResult Index()
+        {
+            return View();
+        }
+        public JsonResult GetExternalUserSalary()
+        {
+            ExternalUser extUser = new ExternalUser();
+            return Json(new{success=true,data=extUser.CalculateSalary(),JsonBehaviour.AllowGet});
+        }
+        public JsonResult GetInternalUserSalary()
+        {
+            InternalUser extUser = new InternalUser();
+            return Json(new{success=true,data=extUser.CalculateSalary(),JsonBehaviour.AllowGet});
+        }
+    }
