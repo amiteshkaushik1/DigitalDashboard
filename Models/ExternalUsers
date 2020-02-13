@@ -1,1 +1,7 @@
-
+public class ExternalUser : IAccounts
+{
+    public int CalculateSalary()
+    {
+        int Attendence=
+    }
+}
