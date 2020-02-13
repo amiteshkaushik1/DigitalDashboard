@@ -2,6 +2,12 @@ public class ExternalUser : IAccounts
 {
     public int CalculateSalary()
     {
-        int Attendence=
+        EmpDetail empDtl=new EmpDetail();
+        Accounts accnts=new Accounts();
+        int Attendence=empDtl.GetAttendence(UserID);
+        List<EmpDetail> empDetail=empDtl.GetEmpDetail(UserID);
+        //SalaryCalculation Login goes here//
+          //Some code//
+        //********************************//
     }
 }
