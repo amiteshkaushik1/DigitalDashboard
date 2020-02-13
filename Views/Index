@@ -1,1 +1,30 @@
-
+$(document).ready(function() {  
+        $(function() {  
+            ajax({
+                  type:'GET',
+                  Url:'@Url.Action("GetExternalUser","Home")',
+                  dataType:'application/json',
+                  success:function(data){
+                      //Bind Userdetail with salary in Jquery Datatable
+                        datatable binding code
+                      //***********************************************
+                  },
+                  error:function(){
+                    swal("Error","error","Some Error Occured");
+                  }
+            });
+            ajax({
+                  type:'GET',
+                  Url:'@Url.Action("GetInternalUser","Home")',
+                  dataType:'application/json',
+                  success:function(data){
+                      //Bind Userdetail with salary in Jquery Datatable
+                        datatable binding code
+                      //***********************************************
+                  },
+                  error:function(){
+                    swal("Error","error","Some Error Occured");
+                  }
+            });
+        });  
+    }); 
