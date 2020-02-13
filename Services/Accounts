@@ -1,1 +1,5 @@
-
+DBEntityContext db = new DBEntityContext();
+public List<Attendence> GetAttendenceByUserID(int UserID)
+{
+    return db.Attendence.ToList();
+}
