@@ -1,0 +1,4 @@
+interface IAccounts
+{
+    int CalculateSalary();
+}
